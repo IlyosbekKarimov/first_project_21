@@ -2,8 +2,8 @@
 
 count=0
 
-echo 'Здравствуйте! Вы запустили модуль ИИ, контролирующий все двери комплекса.'
-echo 'Загрузка необходимых файлов с данными...'
+echo 'Hello! You have launched an AI module that controls all the doors of the complex.'
+echo 'Loading the necessary data files...'
 if [ -d "door_management_files" ]; then
   uname_out="$(uname -s)"
   case "${uname_out}" in
@@ -18,7 +18,7 @@ if [ -d "door_management_files" ]; then
   echo
   echo
   echo '-------------------------------------' 
-  echo 'Загрузка файлов конфигурации дверей...'
+  echo 'Loading door configuration files...'
   echo
   if [ -d "door_configuration" ]; then
     cd door_configuration
@@ -43,7 +43,7 @@ if [ -d "door_management_files" ]; then
   echo
   echo
   echo '-------------------------------------' 
-  echo 'Загрузка карты дверей...'
+  echo 'Loading door map...'
   echo
   if [ -d "door_map" ]; then
     cd door_map
@@ -59,7 +59,7 @@ if [ -d "door_management_files" ]; then
   echo
   echo  
   echo '-------------------------------------' 
-  echo 'Чтение логов дверей...'
+  echo 'Reading door logs...'
   echo
   if [ -d "door_logs" ]; then
     cd door_logs
@@ -89,5 +89,5 @@ echo
 if [ $count -eq 34 ]; then
   ./ai_door_control.sh &
 else
-  echo "Ошибка загрузки данных... Протокол ИИ прерван."
+  echo "Error loading data... AI protocol interrupted."
 fi
