@@ -1,13 +1,13 @@
-1. Мои поздравления.
-2. *имитация сарказма* Первую комнату ты почти закончил.
-3. Для начала, ты должен запомнить, вся работа должна вестись только на
-ветке develop! Создааай же ее, перенеся туда все изменения!
-4. Чтобы открыть дверь, создай от develop новую ветку key-branch. Убедись, что в ней присутствует ключ main.key
-5. Создай копию ключа (main-2.key) и зафиксируй изменения
-6. Создай ветку от key-branch и назови ее feature/3-key
-7. Создай вторую копию ключа (main-3.key) в ветке feature/3-key 
-8. Зафиксируй изменения. Не забудь оставить название ветки в начале комментария к коммиту.
-> "Не задавай вопросов, почему. Программисты всегда говорили что это важно: я и привык."
-9. Подлей изменения из feature/3-key в key-branch
-10. Создай ветку release/1.0 от develop ветки
-II. Подлей последовательно key-branch в develop и develop в release/1.0.
+1. Congratulations.
+2. *imitation of sarcasm* You're almost done with the first room.
+3. To begin with, you must remember that all work should be carried out only on
+branch develop! Create it, transferring all the changes there!
+4. To open the door, create a new key-branch from develop. Make sure that the key main.key is present in it
+5. Create a copy of the key (main-2.key) and commit the changes
+6. Create a branch from key-branch and name it feature/3-key
+7. Create a second copy of the key (main-3.key) in the feature/3-key branch
+8. Commit changes. Don't forget to leave the branch name at the beginning of the commit comment.
+> "Don't ask questions why. Programmers always said that this is important: I'm used to it."
+9. Add changes from feature/3-key to key-branch
+10. Create a release/1.0 branch from the develop branch
+II. Submit successively key-branch in develop and develop in release/1.0.
