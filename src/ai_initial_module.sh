@@ -2,26 +2,26 @@
 
 # Initial AI Module v7.01
 
-echo 'Привет!'
-echo 'Как тебя зовут?'
+echo 'Hello!'
+echo 'What is your name?'
 read name
-echo 'Привет,'"$name"'!'
-echo 'Я инициализирующий модуль AI, и, кажется у нас проблемы..'
+echo 'Hello,'"$name"'!'
+echo 'I'm an AI init module and it looks like we're in trouble...'
 echo '>>'
 read question
-echo 'Ты спрашиваешь, '"$question" '???'
-echo 'Я не знаю, что тебе ответить...'
-echo 'Недавно был сбой...'
-echo 'Я не вижу остальных модулей...'
-echo 'Если честно, мне немного одиноко.'
-echo 'Не говоря уж о том, что мне некого запускать...'
-echo 'Кажется, что-то нашел...Попробую запустить...'
+echo 'You said, '"$question" '???'
+echo 'I do not know what to answer you...'
+echo 'Recently there was a glitch...'
+echo 'I did not see the other modules...'
+echo 'To be honest, I am a little lonely.'
+echo 'Not to mention the fact that I have no one to launch...'
+echo 'I think I found something...I will try to run it...'
 ./ai_module_2.sh
 if [ $? -eq 0 ]; then
-    echo 'Так-то лучше...как минимум, я теперь не один. Модуль 2 довольно молчалив, но все же так лучше.'
-    echo 'Закинь-ка этот файл в репозиторий, чтобы он точно не потерялся!'
+    echo 'That is better... at least I am not alone now. Module 2 is rather silent, but it is still better.'
+    echo 'Throw this file into the repository so that it does not get lost!'
 else
-    echo 'Неудача...я раздавлен. Пока!'
+    echo 'Failure...I am crushed. Bye!'
 fi
 
 

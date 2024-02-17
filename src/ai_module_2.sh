@@ -6,18 +6,18 @@ while IFS= read -r line
 do
   index=$[ $index + 1 ]
   if [ "$index" = "$line" ]; then
-    echo 'ЗАГРУЗКА ПОДМОДУЛЯ '"$line"' ПРОШЛА УСПЕШНО'
+    echo 'LOADING A SUBMODULE '"$line"' WAS SUCCESSFUL'
   else
-    echo 'ОШИБКА!ОШИБКА!ОШИБКА!ОШИБКА! Произошла ошибка при загрузке подмодуля '"$index"
+    echo 'ERROR!ERROR!ERROR!ERROR! An error occurred while loading the submodule '"$index"
     exit 1
   fi
 done <  important_data_for_ai_module_2.txt
 if [ "$index" = 5 ];then
-  echo 'ЗАГРУЗКА ПОДМОДУЛЕЙ '"$line"' ПРОШЛА УСПЕШНО'
+  echo 'LOADING A SUBMODULE '"$line"' WAS SUCCESSFUL'
 else
-  echo 'ОШИБКА!ОШИБКА!ОШИБКА!ОШИБКА! Не хватает нескольких модулей ... '"$index"
+  echo 'ERROR!ERROR!ERROR!ERROR! Several modules are missing... '"$index"
   exit 1
 fi
 
-echo 'МОДУЛЬ 2 успешно загружен!'
+echo 'MODULE 2 successfully loaded!'
 exit 0
